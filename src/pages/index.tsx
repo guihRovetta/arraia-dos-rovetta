@@ -11,15 +11,7 @@ import type {NextPage} from 'next';
 
 const Home: NextPage = () => {
   return (
-    <Center
-      minH="100vh"
-      bg="purple.900"
-      flexDirection="column"
-      pt={8}
-      bgImage="https://www.papeldeparedestar.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/t/star_design_245264.jpg"
-      bgBlendMode="multiply"
-      bgRepeat="repeat"
-    >
+    <Center minH="100vh" bg="purple.900" flexDirection="column" pt={8}>
       <FlagsSection top={2} />
       <FlagsSection top="8%" />
       <FlagsSection top="24%" />

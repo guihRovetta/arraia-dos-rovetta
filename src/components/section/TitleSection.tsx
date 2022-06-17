@@ -6,7 +6,7 @@ export const TitleSection = () => (
       <HStack spacing={2}>
         <Box h={1} w={12} bg="white" as="hr" />
 
-        <Heading fontSize="5xl" as="h1" lineHeight={0.75}>
+        <Heading fontSize="5xl" as="h1" lineHeight={0.75} minW="150px">
           Arraiá dos
         </Heading>
 
