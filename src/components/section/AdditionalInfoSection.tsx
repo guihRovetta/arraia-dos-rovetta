@@ -4,9 +4,10 @@ import HatImg from 'public/assets/hat.png';
 
 export const AdditionalInfoSection = () => (
   <ContentBox
-    _vStackProps={{bg: 'orange.400'}}
+    _vStackProps={{bg: 'orange.600'}}
     _imageProps={{
       src: HatImg,
+      alt: 'Chapéu caipira',
     }}
     imageAlign="left"
   >

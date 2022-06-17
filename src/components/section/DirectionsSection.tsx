@@ -17,6 +17,7 @@ export const DirectionsSection = () => (
       }}
       _imageProps={{
         src: CornImg,
+        alt: 'Milhos',
       }}
     >
       <Heading fontSize="5xl" as="h2" lineHeight={0.75}>
@@ -52,6 +53,7 @@ export const DirectionsSection = () => (
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7342.111096478161!2d-45.88431903908994!3d-23.058424999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d4a0294e787f2c2!2zMjPCsDAzJzMwLjMiUyA0NcKwNTInNTAuNiJX!5e0!3m2!1spt-BR!2sbr!4v1655060182611!5m2!1spt-BR!2sbr"
             loading="lazy"
+            title="Roça do Vô - Google Maps"
           />
         </AspectRatio>
       </VStack>

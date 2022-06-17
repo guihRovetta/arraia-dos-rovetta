@@ -12,6 +12,7 @@ export const FoodsAndDrinksSection = () => (
     _vStackProps={{bg: 'blue.600', spacing: 10}}
     _imageProps={{
       src: HotDogImg,
+      alt: 'Cachorro-Quente',
     }}
   >
     <VStack spacing={4}>
