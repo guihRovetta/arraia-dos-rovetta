@@ -31,12 +31,20 @@ export const TitleSection = () => (
       </Center>
     </VStack>
 
-    <VStack spacing={4}>
-      <Heading fontSize="6xl" as="h2" lineHeight={0.75}>
-        24 de junho
-      </Heading>
+    <VStack spacing={6}>
+      <HStack spacing={2}>
+        <Box h={1} w={6} bg="white" as="hr" />
+
+        <Heading fontSize="6xl" as="h2" lineHeight={0.75}>
+          24 de Junho
+        </Heading>
+
+        <Box h={1} w={6} bg="white" as="hr" />
+      </HStack>
+
       <Heading fontSize="5xl" as="h2" lineHeight={1} textAlign="center">
-        A partir das 14h às 19h
+        A partir de 14h
+        <br /> às 19h
       </Heading>
     </VStack>
   </VStack>
