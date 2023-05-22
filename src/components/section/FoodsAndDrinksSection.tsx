@@ -1,45 +1,66 @@
-import {Text, TextProps, VStack} from '@chakra-ui/react';
-import {LongText} from '@internal/components/common';
+import {Text, VStack} from '@chakra-ui/react';
 import {ContentBox} from '@internal/components/template';
 import HotDogImg from 'public/assets/hot-dog.png';
 
-const Title = (props: TextProps) => (
-  <Text fontWeight={700} fontSize="2xl" mb={1} {...props} />
-);
+const FOODS = {
+  title: 'Comidas',
+  list: [
+    'Bolinho Caipira',
+    'Cachorrinho Quente',
+    'Pastelzinho',
+    'Pipoca',
+    'Docinhos Variados',
+    'Bolo de Fubá',
+    'Caldinho',
+  ],
+};
+
+const DRINKS = {
+  title: 'Bebidas',
+  list: ['Refrigerante', 'Suco', 'Chocolate Quente', 'Quentão'],
+};
+
+const ACTIVITIES = {
+  title: 'Atividades',
+  list: [
+    'Música',
+    'Atividades Infantis',
+    'Bingo com premiações (aprox. 15:30)',
+  ],
+};
+
+const LIST = [FOODS, DRINKS, ACTIVITIES];
 
 export const FoodsAndDrinksSection = () => (
   <ContentBox
-    _vStackProps={{bg: 'blue.600', spacing: 10}}
+    _vStackProps={{bg: 'green.400', spacing: 10}}
     _imageProps={{
       src: HotDogImg,
       alt: 'Cachorro-Quente',
     }}
   >
-    <VStack spacing={4}>
-      <Title>Comidas</Title>
-      <Text>Bolinho Caipira</Text>
-      <Text>Cachorrinho Quente</Text>
-      <Text>Pastelzinho</Text>
-      <Text>Pipoca</Text>
-      <Text>Docinhos Variados</Text>
-      <Text>Arroz Doce</Text>
-      <Text>Bolo de Fubá</Text>
-    </VStack>
-
-    <VStack spacing={4}>
-      <Title>Bebidas</Title>
-      <Text>Refrigerante</Text>
-      <Text>Quentão</Text>
-      <Text>Vinho Quente</Text>
-      <Text>Chocolate Quente</Text>
-    </VStack>
-
-    <VStack spacing={4}>
-      <Title>Atrações</Title>
-      <Text>Músicas</Text>
-      <LongText textAlign="center">
-        Bingo com premiações (doação de prendas <strong>opcional</strong>)
-      </LongText>
-    </VStack>
+    {LIST?.map((item, index) => (
+      <VStack key={`item-${index}`} spacing={4}>
+        <Text
+          fontWeight={700}
+          fontSize="2xl"
+          textTransform="uppercase"
+          letterSpacing="3px"
+        >
+          {item?.title}
+        </Text>
+        <VStack>
+          {item?.list?.map((element, elementIndex) => (
+            <Text
+              key={`element-${index}}-${elementIndex}`}
+              lineHeight="21px"
+              textAlign="center"
+            >
+              {element}
+            </Text>
+          ))}
+        </VStack>
+      </VStack>
+    ))}
   </ContentBox>
 );
