@@ -36,8 +36,9 @@ export const DirectionsSection = () => (
           isExternal
           fontSize="lg"
           color="white"
-          fontWeight={700}
+          fontWeight={800}
           textAlign="center"
+          textTransform="uppercase"
           lineHeight={1.25}
         >
           Clique aqui para abrir o Maps

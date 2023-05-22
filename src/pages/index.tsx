@@ -11,7 +11,12 @@ import type {NextPage} from 'next';
 
 const Home: NextPage = () => {
   return (
-    <Center minH="100vh" bg="purple.900" flexDirection="column" pt={8}>
+    <Center
+      minH="100vh"
+      flexDirection="column"
+      pt={8}
+      bgGradient="linear(to-b, #322659, #97266D)"
+    >
       <FlagsSection top={2} />
       <FlagsSection top="8%" />
       <FlagsSection top="24%" />

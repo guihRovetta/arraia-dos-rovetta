@@ -18,7 +18,7 @@ export const ContentBox = ({
     w="full"
     spacing={4}
     position="relative"
-    borderRadius="48px"
+    borderRadius="64px"
     borderWidth="2px"
     borderColor="whiteAlpha.300"
     {..._vStackProps}

@@ -21,7 +21,7 @@ export const FlagsSection = (props: StackProps) => (
       ?.map((_, index) => (
         <Flag
           key={index}
-          color={index % 2 ? 'orange.400' : 'blue.200'}
+          color={index % 2 ? 'red.400' : 'green.300'}
           fontSize={`${FLAG_WIDTH}px`}
           style={{marginTop: '-4px'}}
         />

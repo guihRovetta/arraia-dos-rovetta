@@ -4,7 +4,7 @@ import HatImg from 'public/assets/hat.png';
 
 export const AdditionalInfoSection = () => (
   <ContentBox
-    _vStackProps={{bg: 'orange.600'}}
+    _vStackProps={{bg: 'red.500'}}
     _imageProps={{
       src: HatImg,
       alt: 'Chapéu caipira',
@@ -12,16 +12,16 @@ export const AdditionalInfoSection = () => (
     imageAlign="left"
   >
     <LongText>
-      Traje a rigor é <strong>opcional!</strong>
+      Traje a rigor é <strong>OPCIONAL!</strong>
     </LongText>
 
-    <LongText>
-      Por favor confirme sua presença com <strong>uma semana</strong> de
-      antecedência através dos contatos de <strong>Fernanda Rovetta</strong>{' '}
-      e/ou <strong>Silvana</strong>
+    <LongText textAlign="justify">
+      Por favor confirme sua presença com <strong>15 DIAS</strong> de
+      antecedência através dos contatos de <strong>Fernanda Rovetta</strong> ou{' '}
+      <strong>Silvana Rovetta</strong>
     </LongText>
 
-    <LongText>
+    <LongText textAlign="justify">
       O valor por pessoa será informado após a confirmação da quantidade de
       convidados
     </LongText>
