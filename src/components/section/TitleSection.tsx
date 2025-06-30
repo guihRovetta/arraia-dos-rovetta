@@ -36,15 +36,14 @@ export const TitleSection = () => (
         <Box h={1} w={6} bg="white" as="hr" />
 
         <Heading fontSize="6xl" as="h2" lineHeight={0.75}>
-          24 de Junho
+          26 de Julho
         </Heading>
 
         <Box h={1} w={6} bg="white" as="hr" />
       </HStack>
 
       <Heading fontSize="5xl" as="h2" lineHeight={1} textAlign="center">
-        A partir de 14h
-        <br /> às 19h
+        13h às 18h
       </Heading>
     </VStack>
   </VStack>

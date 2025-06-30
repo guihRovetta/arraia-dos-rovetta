@@ -11,19 +11,28 @@ export const AdditionalInfoSection = () => (
     }}
     imageAlign="left"
   >
-    <LongText>
+    <LongText textAlign="center">
       Traje a rigor é <strong>OPCIONAL!</strong>
     </LongText>
 
-    <LongText textAlign="justify">
-      Por favor confirme sua presença com <strong>15 DIAS</strong> de
-      antecedência através dos contatos de <strong>Fernanda Rovetta</strong> ou{' '}
-      <strong>Silvana Rovetta</strong>
+    <LongText textAlign="center">
+      Início do Bingo: <strong>15h</strong>
     </LongText>
 
-    <LongText textAlign="justify">
-      O valor por pessoa será informado após a confirmação da quantidade de
-      convidados
+    <LongText textAlign="center">
+      Confirmação e pagamento: <strong>ATÉ 13/07</strong>
+    </LongText>
+
+    <LongText textAlign="center">
+      Pagamento via PIX: <strong>(Silvana)</strong>
+    </LongText>
+
+    <LongText textAlign="center">
+      <strong>Menores de 6 anos NÃO </strong>pagam.
+      <br />
+      <strong>De 6 a 12 anos </strong>pagam <strong>R$15.</strong>
+      <br />
+      <strong>Acima de 12 anos </strong>pagam <strong>R$25.</strong>
     </LongText>
   </ContentBox>
 );

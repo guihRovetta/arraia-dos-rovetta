@@ -6,27 +6,20 @@ const FOODS = {
   title: 'Comidas',
   list: [
     'Bolinho Caipira',
-    'Cachorrinho Quente',
-    'Pastelzinho',
-    'Pipoca',
-    'Docinhos Variados',
-    'Bolo de Fubá',
-    'Caldinho',
+    'Pastelzinho de frango',
+    'Cachorrinho quente',
+    'Docinhos',
   ],
 };
 
 const DRINKS = {
   title: 'Bebidas',
-  list: ['Refrigerante', 'Suco', 'Chocolate Quente', 'Quentão'],
+  list: ['Água', 'Refrigerante', 'Quentão'],
 };
 
 const ACTIVITIES = {
   title: 'Atividades',
-  list: [
-    'Música',
-    'Atividades Infantis',
-    'Bingo com premiações (aprox. 15:30)',
-  ],
+  list: ['Música', 'Bingo com premiações (grátis)'],
 };
 
 const LIST = [FOODS, DRINKS, ACTIVITIES];
